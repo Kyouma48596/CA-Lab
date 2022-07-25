@@ -1,0 +1,85 @@
+$date
+	Thu Mar 03 14:26:59 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module instr_fetch_test $end
+$var wire 32 ! instruction_code [31:0] $end
+$var reg 1 " clk $end
+$var reg 1 # reset $end
+$scope module I1 $end
+$var wire 1 " clk $end
+$var wire 1 # reset $end
+$var wire 32 $ instr_code [31:0] $end
+$var reg 32 % PC [31:0] $end
+$scope module i1 $end
+$var wire 32 & PC [31:0] $end
+$var wire 1 # reset $end
+$var wire 32 ' instruction_code [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx '
+bx &
+bx %
+bx $
+1#
+0"
+bx !
+$end
+#5000
+b1010010011000001100110011 !
+b1010010011000001100110011 $
+b1010010011000001100110011 '
+b0 %
+b0 &
+0#
+1"
+#6000
+1#
+#10000
+0"
+#15000
+b1000000001000001000010000110011 !
+b1000000001000001000010000110011 $
+b1000000001000001000010000110011 '
+b100 %
+b100 &
+1"
+#20000
+0"
+#25000
+b10010100110000001110110011 !
+b10010100110000001110110011 $
+b10010100110000001110110011 '
+b1000 %
+b1000 &
+1"
+#30000
+0"
+#35000
+b1000010000000010010011 !
+b1000010000000010010011 $
+b1000010000000010010011 '
+b1100 %
+b1100 &
+1"
+#40000
+0"
+#45000
+bx !
+bx $
+bx '
+b10000 %
+b10000 &
+1"
+#50000
+0"
+#51000

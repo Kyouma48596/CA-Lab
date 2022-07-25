@@ -1,0 +1,179 @@
+$date
+	Thu Jan 27 18:12:52 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module adder_4bit_test $end
+$var wire 4 ! S [3:0] $end
+$var wire 1 " Cout $end
+$var reg 4 # A [3:0] $end
+$var reg 4 $ B [3:0] $end
+$var reg 1 % Cin $end
+$scope module DUT $end
+$var wire 4 & A [3:0] $end
+$var wire 4 ' B [3:0] $end
+$var wire 1 % Cin $end
+$var wire 4 ( S [3:0] $end
+$var wire 1 " Cout $end
+$var wire 1 ) C2 $end
+$var wire 1 * C1 $end
+$var wire 1 + C0 $end
+$scope module A0 $end
+$var wire 1 , A $end
+$var wire 1 - B $end
+$var wire 1 % Cin $end
+$var wire 1 + Cout $end
+$var wire 1 . S $end
+$upscope $end
+$scope module A1 $end
+$var wire 1 / A $end
+$var wire 1 0 B $end
+$var wire 1 + Cin $end
+$var wire 1 * Cout $end
+$var wire 1 1 S $end
+$upscope $end
+$scope module A2 $end
+$var wire 1 2 A $end
+$var wire 1 3 B $end
+$var wire 1 * Cin $end
+$var wire 1 ) Cout $end
+$var wire 1 4 S $end
+$upscope $end
+$scope module A3 $end
+$var wire 1 5 A $end
+$var wire 1 6 B $end
+$var wire 1 ) Cin $end
+$var wire 1 " Cout $end
+$var wire 1 7 S $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x7
+x6
+x5
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+bx (
+bx '
+bx &
+x%
+bx $
+bx #
+x"
+bx !
+$end
+#5
+04
+0*
+1"
+11
+07
+0+
+1)
+b11 !
+b11 (
+1.
+1,
+0/
+12
+05
+0-
+10
+13
+16
+b101 #
+b101 &
+b1110 $
+b1110 '
+0%
+#10
+14
+1*
+0"
+01
+b1101 !
+b1101 (
+17
+0,
+1/
+1-
+06
+b110 #
+b110 &
+b111 $
+b111 '
+#15
+11
+1+
+1"
+0.
+b110 !
+b110 (
+07
+1,
+16
+b111 #
+b111 &
+b1111 $
+b1111 '
+#20
+b111 !
+b111 (
+1.
+1%
+#25
+0"
+04
+b1011 !
+b1011 (
+17
+0*
+0)
+0/
+02
+15
+00
+03
+06
+b1001 #
+b1001 &
+b1 $
+b1 '
+#30
+1"
+07
+14
+1)
+1*
+1/
+12
+05
+10
+13
+16
+b110 !
+b110 (
+0.
+b111 #
+b111 &
+b1111 $
+b1111 '
+0%
+#40

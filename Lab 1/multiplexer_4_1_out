@@ -1,0 +1,67 @@
+#! /usr/local/iverilog/bin/vvp
+:ivl_version "11.0 (devel)" "(s20150603-642-g3bdb50da)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "vhdl_textio";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0000000000f762b0 .scope module, "multiplexer_4_1_test" "multiplexer_4_1_test" 2 1;
+ .timescale 0 0;
+v0000000000f7a240_0 .var "in", 3 0;
+v0000000000f7a2e0_0 .net "q", 0 0, L_0000000000fc5610;  1 drivers
+v0000000000fc5570_0 .var "sel", 1 0;
+S_0000000000fc53e0 .scope module, "DUT" "multiplexer_4_1" 2 7, 3 1 0, S_0000000000f762b0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 4 "in";
+    .port_info 1 /INPUT 2 "sel";
+    .port_info 2 /OUTPUT 1 "q";
+v0000000000f76440_0 .net "in", 3 0, v0000000000f7a240_0;  1 drivers
+v0000000000f760f0_0 .net "q", 0 0, L_0000000000fc5610;  alias, 1 drivers
+v0000000000f7a1a0_0 .net "sel", 1 0, v0000000000fc5570_0;  1 drivers
+L_0000000000fc5610 .part/v v0000000000f7a240_0, v0000000000fc5570_0, 1;
+    .scope S_0000000000f762b0;
+T_0 ;
+    %vpi_call 2 10 "$dumpfile", "multiplexer_4_1_out.vcd" {0 0 0};
+    %vpi_call 2 11 "$dumpvars" {0 0 0};
+    %delay 5, 0;
+    %pushi/vec4 10, 0, 4;
+    %store/vec4 v0000000000f7a240_0, 0, 4;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v0000000000fc5570_0, 0, 2;
+    %delay 5, 0;
+    %pushi/vec4 11, 0, 4;
+    %store/vec4 v0000000000f7a240_0, 0, 4;
+    %pushi/vec4 1, 0, 2;
+    %store/vec4 v0000000000fc5570_0, 0, 2;
+    %delay 5, 0;
+    %pushi/vec4 12, 0, 4;
+    %store/vec4 v0000000000f7a240_0, 0, 4;
+    %pushi/vec4 2, 0, 2;
+    %store/vec4 v0000000000fc5570_0, 0, 2;
+    %delay 5, 0;
+    %pushi/vec4 13, 0, 4;
+    %store/vec4 v0000000000f7a240_0, 0, 4;
+    %pushi/vec4 3, 0, 2;
+    %store/vec4 v0000000000fc5570_0, 0, 2;
+    %delay 5, 0;
+    %pushi/vec4 14, 0, 4;
+    %store/vec4 v0000000000f7a240_0, 0, 4;
+    %pushi/vec4 2, 0, 2;
+    %store/vec4 v0000000000fc5570_0, 0, 2;
+    %delay 5, 0;
+    %pushi/vec4 15, 0, 4;
+    %store/vec4 v0000000000f7a240_0, 0, 4;
+    %pushi/vec4 1, 0, 2;
+    %store/vec4 v0000000000fc5570_0, 0, 2;
+    %delay 10, 0;
+    %vpi_call 2 31 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "multiplexer_4_1_test.v";
+    "multiplexer_4_1.v";

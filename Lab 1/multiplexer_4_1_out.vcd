@@ -1,0 +1,62 @@
+$date
+	Thu Jan 27 18:41:05 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module multiplexer_4_1_test $end
+$var wire 1 ! q $end
+$var reg 4 " in [3:0] $end
+$var reg 2 # sel [1:0] $end
+$scope module DUT $end
+$var wire 4 $ in [3:0] $end
+$var wire 2 % sel [1:0] $end
+$var wire 1 ! q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx %
+bx $
+bx #
+bx "
+x!
+$end
+#5
+0!
+b0 #
+b0 %
+b1010 "
+b1010 $
+#10
+b1 #
+b1 %
+1!
+b1011 "
+b1011 $
+#15
+b10 #
+b10 %
+1!
+b1100 "
+b1100 $
+#20
+b11 #
+b11 %
+b1101 "
+b1101 $
+#25
+b10 #
+b10 %
+b1110 "
+b1110 $
+#30
+b1 #
+b1 %
+b1111 "
+b1111 $
+#40
